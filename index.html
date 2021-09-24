@@ -204,7 +204,8 @@
           display: table;
           table-layout: fixed;
           width: 100%;
-          word-wrap: break-word
+          word-wrap: break-word;
+          display: flex;
         }
 
         #document.skn-srz2 .table_wrapper {
@@ -513,6 +514,22 @@
           .dates_wrapper {
             left: -120px !important;
             width: 60px !important;
+          }
+
+          #document.skn-srz2 .address {
+            flex-direction: column !important;
+          }
+
+          #document.skn-srz2 .addressLeft {
+            margin-bottom: 0.5rem;
+            flex-grow: 1;
+            width: 100% !important;
+          }
+
+          #document.skn-srz2 .addressRight {
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            width: 100% !important;
           }
         }
 
