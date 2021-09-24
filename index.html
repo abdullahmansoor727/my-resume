@@ -487,7 +487,8 @@
 
         #document {
           background-color: #ffffff;
-          box-shadow: 0 3px 25px #d5d5d5;
+          box-shadow: 0 3px 25px #6464642c;
+          border-radius: 18px;
         }
 
         #document.skn-srz2 {
@@ -501,6 +502,7 @@
         @media screen and (max-width: 768px) {
           #document.skn-srz2.pagesize {
             width: 100% !important;
+            border-radius: 0 !important;
           }
 
           .resume-page {
@@ -678,8 +680,100 @@
           justify-content: center;
           margin: 3rem;
         }
+
+        .Rectangle_3 {
+
+          position: fixed;
+          width: 120px;
+          height: 120px;
+          left: 80%;
+          top: 8%;
+          animation: 8s ease-in-out 0s infinite alternate Rectangle_3;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background: #D5EBFF;
+          border-radius: 50%;
+          transform: rotate(45deg);
+          z-index: -1;
+        }
+
+        @keyframes Rectangle_3 {
+          0% {
+            transform: translateX(0px) translateY(0px);
+          }
+
+          50% {
+            transform: translateX(14px) translateY(-43px);
+          }
+
+          100% {
+            transform: translateX(-14px) translateY(43px);
+          }
+        }
+
+        .Rectangle_2 {
+          display: inline-block;
+          position: fixed;
+          width: 180px;
+          height: 180px;
+          left: 10%;
+          top: 5%;
+          animation: 8s ease-in-out 0s infinite alternate Rectangle_2;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background: #fff0ad;
+          border-radius: 19px;
+          transform: rotate(45deg);
+          z-index: -1;
+        }
+
+        @keyframes Rectangle_2 {
+          0% {
+            transform: translateY(0px) translateY(0px) translateY(0px) rotate(45deg);
+          }
+
+          50% {
+            transform: translateY(45px);
+          }
+
+          100% {
+            transform: translateY(-45px) rotate(-45deg);
+          }
+        }
+
+        .Polygon_1 {
+          position: fixed;
+          width: 158px;
+          height: 158px;
+          left: 80%;
+          top: 90%;
+          animation: 8s ease-in-out 0s infinite alternate Polygon_1;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background: #FFE0E0;
+          border-radius: 30px;
+
+          z-index: -1;
+        }
+
+        @keyframes Polygon_1 {
+          0% {
+            transform: translateY(0px) rotate(36.76deg);
+          }
+
+          50% {
+            transform: translateY(-43px) rotate(-96.76deg);
+          }
+
+          100% {
+            transform: translateY(43px) rotate(180deg);
+          }
+        }
       </style>
     </div>
+    <div class="Rectangle_3"></div>
+    <div class="Rectangle_2"></div>
+    <div class="Polygon_1"></div>
     <div class="resume-page">
       <div id="document" class="document fontsize fontface vmargins hmargins  pagesize skn-srz2 SRZ2  ZTY ">
         <div id="CONTAINER_PARENT_0" class="topsection">
