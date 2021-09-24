@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <body>
@@ -494,6 +495,16 @@
 
         #document.skn-srz2.pagesize {
           width: 768px;
+        }
+
+        @media screen and (max-width: 768px) {
+          #document.skn-srz2.pagesize {
+            width: 100% !important;
+          }
+
+          .resume-page {
+            margin: 0 !important;
+          }
         }
 
         #document.skn-srz2.fontsize {
