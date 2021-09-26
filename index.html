@@ -681,99 +681,204 @@
           margin: 3rem;
         }
 
-        .Rectangle_3 {
-
+        .CSS3_logo {
           position: fixed;
-          width: 120px;
-          height: 120px;
-          left: 80%;
+          width: 60px;
+          height: 60px;
+          left: 85%;
           top: 8%;
-          animation: 8s ease-in-out 0s infinite alternate Rectangle_3;
+          animation: 8s ease-in-out 0s infinite alternate CSS3_logo;
           transform-box: fill-box;
           transform-origin: 50% 50%;
-          background: #D5EBFF;
-          border-radius: 50%;
-          transform: rotate(45deg);
+          background-image: url('./img/CSS3_logo.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* border-radius: 50%; */
+          /* transform: rotate(45deg); */
           z-index: -1;
         }
 
-        @keyframes Rectangle_3 {
+        @keyframes CSS3_logo {
           0% {
             transform: translateX(0px) translateY(0px);
           }
 
           50% {
-            transform: translateX(14px) translateY(-43px);
+            transform: translateX(14px) translateY(-10px);
           }
 
           100% {
-            transform: translateX(-14px) translateY(43px);
+            transform: translateX(-14px) translateY(10px);
           }
         }
 
-        .Rectangle_2 {
+        .HTML5_Badge {
           display: inline-block;
           position: fixed;
-          width: 180px;
-          height: 180px;
+          width: 80px;
+          height: 80px;
           left: 10%;
           top: 5%;
-          animation: 8s ease-in-out 0s infinite alternate Rectangle_2;
+          animation: 8s ease-in-out 0s infinite alternate HTML5_Badge;
           transform-box: fill-box;
           transform-origin: 50% 50%;
-          background: #fff0ad;
-          border-radius: 19px;
-          transform: rotate(45deg);
+          background-image: url('./img/HTML5_Badge.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* border-radius: 19px; */
+          /* transform: rotate(45deg); */
           z-index: -1;
         }
 
-        @keyframes Rectangle_2 {
+        @keyframes HTML5_Badge {
           0% {
-            transform: translateY(0px) translateY(0px) translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
           }
 
           50% {
-            transform: translateY(45px);
+            transform: translateY(15px);
           }
 
           100% {
-            transform: translateY(-45px) rotate(-45deg);
+            transform: translateY(-15px) rotate(-45deg);
           }
         }
 
-        .Polygon_1 {
+        .Photoshop_logo {
           position: fixed;
-          width: 158px;
-          height: 158px;
-          left: 80%;
+          width: 64px;
+          height: 60px;
+          left: 88%;
           top: 90%;
-          animation: 8s ease-in-out 0s infinite alternate Polygon_1;
+          animation: 8s ease-in-out 0s infinite alternate Photoshop_logo;
           transform-box: fill-box;
           transform-origin: 50% 50%;
-          background: #FFE0E0;
-          border-radius: 30px;
-
+          background-image: url('./img/Adobe_Photoshop_CC.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 12px;
           z-index: -1;
         }
 
-        @keyframes Polygon_1 {
+        @keyframes Photoshop_logo {
           0% {
-            transform: translateY(0px) rotate(36.76deg);
+            transform: translateY(0px) rotate(45deg);
           }
 
           50% {
-            transform: translateY(-43px) rotate(-96.76deg);
+            transform: translateY(-13px) rotate(0deg);
           }
 
           100% {
-            transform: translateY(43px) rotate(180deg);
+            transform: translateY(13px) rotate(30deg);
+          }
+        }
+
+        .Illustrator_logo {
+          position: fixed;
+          width: 64px;
+          height: 60px;
+          left: 2%;
+          top: 50%;
+          animation: 12s ease-in-out 0s infinite alternate Illustrator_logo;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background-image: url('./img/Adobe_Illustrator_CC.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 12px;
+          z-index: -1;
+        }
+
+        @keyframes Illustrator_logo {
+          0% {
+            transform: translateY(0px) rotate(15deg);
+          }
+
+          25% {
+            transform: translateY(-20px) rotate(-15deg);
+          }
+
+          75% {
+            transform: translateX(-20px) translateY(12px) rotate(-15deg);
+          }
+
+          50% {
+            transform: translateX(-12px) rotate(0deg);
+          }
+
+          100% {
+            transform: translateY(20px) rotate(15deg);
+          }
+        }
+
+        .React_logo {
+          position: fixed;
+          width: 75px;
+          height: 67px;
+          left: 90%;
+          top: 40%;
+          animation: 8s linear 0s infinite React_logo;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background-image: url('./img/React-icon.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* border-radius: 12px; */
+          z-index: -1;
+        }
+
+        @keyframes React_logo {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          50% {
+            transform: rotate(180deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        .Vue_logo {
+          position: fixed;
+          width: 68px;
+          height: 60px;
+          left: 5%;
+          top: 85%;
+          animation: 12s ease-in-out 0s infinite alternate Vue_logo;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          background-image: url('./img/Vue.js_Logo_2.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* border-radius: 12px; */
+          z-index: -1;
+        }
+
+        @keyframes Vue_logo {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(10px);
+          }
+
+          100% {
+            transform: translateY(-10px);
           }
         }
       </style>
     </div>
-    <div class="Rectangle_3"></div>
-    <div class="Rectangle_2"></div>
-    <div class="Polygon_1"></div>
+    <div class="CSS3_logo"></div>
+    <div class="HTML5_Badge"></div>
+    <div class="Photoshop_logo"></div>
+    <div class="Illustrator_logo"></div>
+    <div class="React_logo"></div>
+    <div class="Vue_logo"></div>
     <div class="resume-page">
       <div id="document" class="document fontsize fontface vmargins hmargins  pagesize skn-srz2 SRZ2  ZTY ">
         <div id="CONTAINER_PARENT_0" class="topsection">
